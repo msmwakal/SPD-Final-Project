@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<!--
+	Twenty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title> Community Exchange Hub</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}"/> -->
+		<link rel="stylesheet" href="/static/css/main.css"/>
+		<noscript> <link rel="stylesheet" href="/static/css/noscript.css"/></noscript>
+	</head>
+	<body class="index is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<h1 id="logo"><a href="index.html"> Community <span> Exchange Hub </span></a></h1>
+					<nav id="nav">
+						<ul>
+							<li> <a href="/index">Welcome</a></li>
+							<li> <a href="/listings"> Listings </a> </li>
+							<li> <a href="/reviews"> Reviews </a> </li>
+							<li> <a href="/inbox"> Inbox </a> </li>
+							<li> <a href="/login" class="button primary"> Log in</a></li>
+						</ul>	
+					</nav>
+				</header>
+
+			<!-- Main -->
+				<article id="main banner">
+					{% block body %}
+					{% endblock %}
+				</article>
+
+			<!-- Footer -->
+				<footer id="footer">
+
+					<ul class="icons">
+						<li><a href="#" class="icon brands circle fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands circle fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon brands circle fa-google-plus-g"><span class="label">Google+</span></a></li>
+						<li><a href="#" class="icon brands circle fa-github"><span class="label">Github</span></a></li>
+						<li><a href="#" class="icon brands circle fa-dribbble"><span class="label">Dribbble</span></a></li>
+					</ul>
+
+					<ul class="copyright">
+						<li>&copy; Indiana Univesity 2023 </li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="/static/js/jquery.min.js"></script>
+			<script src="/static/js/jquery.dropotron.min.js"></script>
+			<script src="/static/js/jquery.scrolly.min.js"></script>
+			<script src="/static/js/jquery.scrollex.min.js"></script>
+			<script src="/static/js/browser.min.js"></script>
+			<script src="/static/js/breakpoints.min.js"></script>
+			<script src="/static/js/util.js"></script>
+			<script src="/static/js/main.js"></script>
+
+	</body>
+</html>
