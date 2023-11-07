@@ -17,6 +17,10 @@ app=Flask(__name__)
 def index():
     return render_template('index.html')
 
+@app.route("/home") 
+def home():
+    return render_template('home.html')
+
 @app.route("/listings") 
 def listings():
     return render_template('listings.html')
@@ -29,9 +33,15 @@ def reviews():
 def inbox():
     return render_template('inbox.html')
 
-# for some forsaken reason this is not working even though it is identical to the other ones
+
 @app.route("/login") 
 def login():
     return render_template('login.html')
+
+@app.route("/signup") 
+def signup():
+    return render_template('signup.html')
+
+
 
 app.run(debug=True)
