@@ -3349,4 +3349,6 @@ input, select, textarea {
 
 	#right {
 		text-align: right;
+		width: 50%;
+		margin: auto;
 	}
