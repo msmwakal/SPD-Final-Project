@@ -33,6 +33,10 @@ def mylistings():
 def reviews():
     return render_template('reviews.html')
 
+@app.route("/profile") 
+def profile():
+    return render_template('profile.html')
+
 @app.route("/inbox") 
 def inbox():
     return render_template('inbox.html')

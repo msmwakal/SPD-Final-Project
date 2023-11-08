@@ -1,4 +1,118 @@
 {% extends "template.html" %}
 
 {% block body%}
+<br> <br> <br> <br>
+<header class="special container">
+    <!-- database call for user image -->
+	<span class="icon solid fa-user"></span> <!-- Replace icon with profile picture -->
+    <input type="submit" value=" Change Profile Picture " class="primary" />
+    <h2> My Profile</h2>
+</header>
+
+<!-- One -->
+	<section class="wrapper style4 special container medium">
+
+		<!-- Content -->
+			<div class="content inner">
+				<form class = "inner" id = "left">
+                        <!-- •	userID (Primary Key): Unique identifier for each user. 
+                        •	firstName: First name of the user.
+                        •	lastName: Last name of the user.
+                        •	email: Email address of the user (should be unique).
+                        •	hashedPassword: Securely hashed version of the user's password.
+                        •	profileImage: URL/path to user's profile image.
+                        •	location: Geographical location (city, state) of the user.
+                        •	joinDate: Date the user registered on the platform.
+                        •	lastLogin: Date of the user's last login.
+                        -->
+					<div class="row gtr-50">
+                        <!-- First Name -->
+                        <div class = "col-3 col-12-xsmall">
+                            <h3> <strong> First Name </strong> </h3> 
+                        </div>
+
+						<div class="col-3 col-12-xsmall">
+                            <h3> Marisha </h3>
+                            <!-- First Name from database-->
+                        </div>
+
+                        <div class="col-3 col-12-xsmall">
+                            <input type="text" name="firstname" id="firstname" value="" placeholder= "Change First Name" />
+                        </div>
+
+                        <div class="col-3 col-12-xsmall">
+                            <a href="/login" class="button small"> Edit </a>
+                        </div>
+
+                        <!-- Last Name -->
+                        <div class = "col-3 col-12-xsmall">
+                            <h3> <strong> Last Name </strong> </h3>
+                        </div>
+
+						<div class="col-3 col-12-xsmall">
+                            <h3> Chopade </h3>
+                            <!-- Last Name from database in h3 tags-->
+                        </div>
+
+                        <div class="col-3 col-12-xsmall">
+                            <input type="text" name="lasttname" id="lasttname" value="" placeholder= "Change Last Name" />
+                        </div>
+
+                        <div class="col-3 col-12-xsmall">
+                            <a href="/login" class="button small"> Edit </a>
+                        </div>
+
+                        <!-- Email -->
+                        <div class = "col-6 col-12-xsmall">
+                            <h3> <strong> Email </strong> </h3>
+                        </div>
+
+						<div class="col-6 col-12-xsmall">
+                            <h3> email@email.com </h3>
+                            <!-- Email from database-->
+                        </div>
+                        
+                        <!-- Password -->
+                        <div class = "col-6 col-12-xsmall">
+                            <h3> <strong> Password </strong> </h3>
+                        </div>
+
+						<div class="col-6 col-12-xsmall">
+                            <!-- Password from database hashed-->
+                        </div>
+
+                        <!-- Location -->
+                        <div class = "col-6 col-12-xsmall">
+                            <h3> <strong> Location </strong> </h3>
+                        </div>
+
+						<div class="col-6 col-12-xsmall">
+                            <h3> City, State </h3>
+                            <!-- Location from database-->
+                        </div>
+
+                        <!-- Join Date -->
+                        <div class = "col-6 col-12-xsmall">
+                            <h3> <strong> Join Date </strong> </h3>
+                        </div>
+
+						<div class="col-6 col-12-xsmall">
+                            <h3> summer 2023 </h3>
+                            <!-- Join Date from database-->
+                        </div>
+
+                        <!-- Last Login -->
+                        <div class = "col-6 col-12-xsmall">
+                            <h3> <strong> Last Login </strong></h3>
+                        </div>
+
+						<div class="col-6 col-12-xsmall">
+                            <h3> some date </h3>
+                            <!-- Last login from database-->
+                        </div>
+					</div>
+				</form>
+			</div>
+
+	</section>
 {% endblock %}
