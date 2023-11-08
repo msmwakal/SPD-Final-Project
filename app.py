@@ -25,6 +25,10 @@ def home():
 def listings():
     return render_template('listings.html')
 
+@app.route("/mylistings") 
+def mylistings():
+    return render_template('mylistings.html')
+
 @app.route("/reviews") 
 def reviews():
     return render_template('reviews.html')
